@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //var game = MatchingGame(numberOfPairsOfCards: 4)
+    var game = MatchingGame(numberOfPairsOfCards: 4)
     //var game = MatchingGame()
     
     @IBOutlet weak var label_count: UILabel!

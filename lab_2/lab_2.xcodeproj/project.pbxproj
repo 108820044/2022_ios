@@ -12,6 +12,8 @@
 		3F53E0EA27EAE7E000CCD838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F53E0E827EAE7E000CCD838 /* Main.storyboard */; };
 		3F53E0EC27EAE7E000CCD838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F53E0EB27EAE7E000CCD838 /* Assets.xcassets */; };
 		3F53E0EF27EAE7E000CCD838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F53E0ED27EAE7E000CCD838 /* LaunchScreen.storyboard */; };
+		3F7C397D27EAEEE400975042 /* MatchingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7C397C27EAEEE400975042 /* MatchingGame.swift */; };
+		3F7C397F27EAEF0700975042 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7C397E27EAEF0700975042 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3F53E0EB27EAE7E000CCD838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F53E0EE27EAE7E000CCD838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F53E0F027EAE7E000CCD838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7C397C27EAEEE400975042 /* MatchingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingGame.swift; sourceTree = "<group>"; };
+		3F7C397E27EAEF0700975042 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				3F53E0E427EAE7E000CCD838 /* AppDelegate.swift */,
 				3F53E0E627EAE7E000CCD838 /* ViewController.swift */,
+				3F7C397C27EAEEE400975042 /* MatchingGame.swift */,
+				3F7C397E27EAEF0700975042 /* Card.swift */,
 				3F53E0E827EAE7E000CCD838 /* Main.storyboard */,
 				3F53E0EB27EAE7E000CCD838 /* Assets.xcassets */,
 				3F53E0ED27EAE7E000CCD838 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			files = (
 				3F53E0E727EAE7E000CCD838 /* ViewController.swift in Sources */,
 				3F53E0E527EAE7E000CCD838 /* AppDelegate.swift in Sources */,
+				3F7C397D27EAEEE400975042 /* MatchingGame.swift in Sources */,
+				3F7C397F27EAEF0700975042 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
