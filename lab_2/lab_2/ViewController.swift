@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var label_count: UILabel!
     @IBOutlet var cards : [UIButton]!
-    var texts = [1, 3, 4, 2, 3, 4, 2, 1]
     var emojiChoices = ["🤣", "😡", "🤡", "😈", "😇", "😱", "👍", "💄"]
     var emojiDictionary = Dictionary<Int, String>()
     
@@ -48,17 +47,29 @@ class ViewController: UIViewController {
                 button.backgroundColor = UIColor.purple
             }
         }
+        label_count.text = "flip count : " + String(game.flipCounter);
     }
     
     @IBAction func flip_action(_ sender: UIButton) {
-        if let cardNumber = cards.index(of:sender){
-            game.chooseCard(at: cardNumber)
-            updateViewFromModel()
-        }else{
-            print("not")
+        if(!game.isFlipAll){
+            if let cardNumber = cards.index(of:sender){
+                game.chooseCard(at: cardNumber)
+                updateViewFromModel()
+            }else{
+                print("not")
+            }
         }
-        label_count.text = "flip count : " + String(game.counter);
     }
     
+    
+    @IBAction func reset_action(_ sender: UIButton) {
+        game.reset(numberOfPairsOfCards: (cards.count+1)/2)
+        updateViewFromModel()
+    }
+    
+    @IBAction func flip_all_action(_ sender: UIButton) {
+        game.flip_all()
+        updateViewFromModel()
+    }
 }
 
